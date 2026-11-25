@@ -1,0 +1,647 @@
+/* =====================================
+   SMART PHARMACY
+   DIGITAL PROJECT IDENTITY 2027
+===================================== */
+
+@font-face {
+
+    font-family: "Madani";
+
+    src: url("css/fonts/Madani Arabic Light.ttf")
+         format("truetype");
+
+    font-display: swap;
+}
+
+:root {
+
+    --primary: #123b43;
+    --dark: #09272e;
+    --gold: #decda4;
+    --copper: #b27448;
+    --cream: #fbf6ec;
+    --white: #ffffff;
+    --border: #d7c39e;
+    --muted: #52696c;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    margin: 0;
+
+    background: #ede5d5;
+
+    color: var(--primary);
+
+    font-family: "Madani", Tahoma, Arial, sans-serif;
+
+    font-weight: 600;
+
+    line-height: 1.9;
+
+}
+
+.project-container {
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    padding: 22px;
+
+}
+
+/* الواجهة الرئيسية */
+
+.project-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px 25px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        #123b43,
+        #09272e
+    );
+
+    border: 1px solid var(--gold);
+
+    border-radius: 25px;
+
+    color: var(--white);
+
+    margin-bottom: 22px;
+
+    box-shadow: 0 12px 35px rgba(9,39,46,.18);
+
+}
+
+.project-logo {
+
+    margin-bottom: 20px;
+
+    animation: logoFloat 4s ease-in-out infinite;
+
+}
+
+.project-label {
+
+    color: var(--gold);
+
+    font-size: 15px;
+
+}
+
+.project-hero h1 {
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    margin: 10px 0;
+
+    color: var(--white);
+
+}
+
+.english-title {
+
+    color: var(--gold);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+}
+
+.hero-line {
+
+    width: 100px;
+
+    height: 2px;
+
+    margin: 27px auto;
+
+    background: var(--gold);
+
+}
+
+/* الخريجات */
+
+.graduation-icon {
+
+    font-size: 40px;
+
+}
+
+.graduation h2 {
+
+    color: var(--gold);
+
+    font-size: 26px;
+
+    margin: 7px 0;
+
+}
+
+.graduation p {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    margin: 4px 0;
+
+}
+
+.graduation small {
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+}
+
+/* زر اكتشاف المشروع */
+
+.project-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 30px;
+
+    background: var(--gold);
+
+    color: var(--primary);
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    transition: .3s;
+
+}
+
+.project-button:hover {
+
+    background: var(--white);
+
+    transform: translateY(-3px);
+
+}
+
+/* أقسام الصفحة */
+
+.project-section {
+
+    background: var(--cream);
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    margin-bottom: 18px;
+
+    box-shadow: 0 5px 15px rgba(18,59,67,.04);
+
+}
+
+.section-icon {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+
+    height: 48px;
+
+    background: var(--gold);
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+}
+
+.project-section h2 {
+
+    color: var(--primary);
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    margin: 12px 0;
+
+}
+
+.project-section p {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    margin: 8px 0;
+
+}
+
+.project-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0,1fr));
+
+    gap: 18px;
+
+}
+
+/* الأهداف */
+
+.project-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+.project-list li {
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #e7dcc5;
+
+}
+
+.project-list li:last-child {
+
+    border-bottom: none;
+
+}
+
+.project-list li::before {
+
+    content: "✓";
+
+    color: var(--copper);
+
+    margin-left: 10px;
+
+    font-weight: 800;
+
+}
+
+/* المميزات */
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0,1fr));
+
+    gap: 14px;
+
+}
+
+.feature {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    padding: 20px 15px;
+
+    border-radius: 13px;
+
+    text-align: center;
+
+    transition: .25s;
+
+}
+
+.feature:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--copper);
+
+    box-shadow: 0 8px 18px rgba(18,59,67,.09);
+
+}
+
+.feature span {
+
+    font-size: 30px;
+
+}
+
+.feature h3 {
+
+    margin: 8px 0;
+
+    color: var(--primary);
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+.feature p {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+/* التقنيات */
+
+.technologies {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+.technologies span {
+
+    padding: 8px 17px;
+
+    background: var(--primary);
+
+    color: var(--gold);
+
+    border-radius: 9px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+/* فريق المشروع */
+
+.team-section {
+
+    text-align: center;
+
+}
+
+.team-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0,1fr));
+
+    gap: 18px;
+
+    margin-top: 20px;
+
+}
+
+.team-card {
+
+    padding: 25px 15px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+}
+
+.team-avatar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: auto;
+
+    background: var(--primary);
+
+    border: 3px solid var(--gold);
+
+    color: var(--gold);
+
+    border-radius: 50%;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+}
+
+.team-card h3 {
+
+    margin: 12px 0 4px;
+
+    font-size: 19px;
+
+}
+
+.team-card small {
+
+    color: var(--copper);
+
+}
+
+/* الخاتمة */
+
+.project-final {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 18px;
+
+}
+
+.project-final h2 {
+
+    color: var(--gold);
+
+    font-size: 26px;
+
+}
+
+.project-final span {
+
+    display: inline-block;
+
+    color: var(--gold);
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-family: Arial, sans-serif;
+
+}
+
+.project-footer {
+
+    text-align: center;
+
+    padding: 22px 10px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+}
+
+/* الحركة */
+
+@keyframes logoFloat {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-7px);
+
+    }
+
+}
+
+/* الهاتف */
+
+@media (max-width: 700px) {
+
+    .project-container {
+
+        padding: 12px;
+
+    }
+
+    .project-hero {
+
+        padding: 35px 15px;
+
+        border-radius: 18px;
+
+    }
+
+    .project-hero h1 {
+
+        font-size: 27px;
+
+    }
+
+    .english-title {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+    }
+
+    .project-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+    .features-grid {
+
+        grid-template-columns: repeat(2, minmax(0,1fr));
+
+    }
+
+    .project-section {
+
+        padding: 18px;
+
+    }
+
+    .team-card h3 {
+
+        font-size: 16px;
+
+    }
+
+    .team-grid {
+
+        gap: 10px;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+
+        animation: none !important;
+
+        transition: none !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+}
